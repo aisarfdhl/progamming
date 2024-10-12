@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="angka1" required><br><br>
+
+    <input type="text" id="angka2" required><br><br>
+
+    <button onclick="tambah()">tambah</button>
+
+    <button onclick="kurang()">kurang</button>
+
+    <button onclick="kali()">kali</button>
+
+    <button onclick="bagi()">bagi</button>
+<script>
+function tambah(){
+    let angka1 = document.getElementById ('angka1').value
+    let angka2 = document.getElementById ('angka2').value
+    console.log (Number(angka1)+ Number(angka2))
+}
+function kurang(){
+    let angka1 = document.getElementById ('angka1').value
+    let angka2 = document.getElementById ('angka2').value
+    console.log (Number(angka1)- Number(angka2))
+}
+function kali(){
+    let angka1 = document.getElementById ('angka1').value
+    let angka2 = document.getElementById ('angka2').value
+    console.log (Number(angka1)* Number(angka2))
+}
+function bagi(){
+    let angka1 = document.getElementById ('angka1').value
+    let angka2 = document.getElementById ('angka2').value
+    console.log (Number(angka1)/ Number(angka2))
+}
+</script>
+</body>
+</html>
