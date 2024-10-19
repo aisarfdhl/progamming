@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>Nama siwa :</label> 
+   <input type="text" id="namasiswa"><br><br>
+
+   <label">kelas:</label> 
+   <input type="text" id="kelas"><br><br>
+
+   <p id="Namasiswa"></p>
+   <p id="Kelas"></p>
+
+    <button onclick="Submit()">Submit</button>
+    <script>
+       function Submit(){
+        let Namasiswa = ambilData("namasiswa")
+        let Kelas = ambilData("kelas")
+        tampilData("Namasiswa",Namasiswa)
+        tampilData("Kelas",Kelas)
+       }
+       function ambilData(id){
+        let ambildata = document.getElementById(id).value
+        return ambildata
+    }
+        function tampilData(id,isi){
+            let tampildata = document.getElementById(id).innerHTML = id+' : '+isi;
+        }
+    </script>
+
+</body>
+</html>
